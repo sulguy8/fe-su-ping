@@ -15,7 +15,19 @@
   </ion-header>
 
   <div id="container">
-    <strong class="capitalize">{{ folder }}</strong>
+    <strong class="capitalize">{{ folder }}ㅋㅋㅋ</strong>
     <p>Explore <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+  
+    <div>
+      <dl class="login-tab">
+        <dt>이메일 또는 아이디</dt>
+        <dd><input type="text" [(ngModel)]="ui.uiId"></dd>
+        <dt>비밀번호</dt>
+        <dd><input type="password" [(ngModel)]="ui.uiPwd"></dd>
+      </dl>
+      <a (click)="login()" class="login-page-button">수핑 로그인</a>
   </div>
+  </div>
+
+
 </ion-content>
